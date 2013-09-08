@@ -1,0 +1,7 @@
+<h1>Friends Share Recipes!</h1>
+
+<% if user_signed_in? %>
+    <h4> Hello <%= current_user.name %> </h4>
+<% else %>
+    <h4> Login </h4>
+<% end %>

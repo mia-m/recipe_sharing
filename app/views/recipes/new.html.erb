@@ -1,0 +1,15 @@
+<h1>Friends Share Recipes!</h1>
+
+<%= form_for @recipe do |f| %>
+  <div>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %><br />
+  </div>
+  <div>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %><br />
+  </div>
+  <div>
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>
