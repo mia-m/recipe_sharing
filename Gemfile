@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+ruby "1.9.3"
 
 gem 'warden', '1.2.3'
 

@@ -7,7 +7,7 @@
     <file path="/homes_controller.rb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1378623127260" ignored="false" />
     <file path="/index.html.erb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1378623636868" ignored="false" />
     <file path="/routes.rb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1378619506254" ignored="false" />
-    <file path="/Gemfile" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1378666475547" ignored="false" />
+    <file path="/Gemfile" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1378666840955" ignored="false" />
     <file path="/development.rb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1378619922403" ignored="false" />
     <file path="/application.rb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1378620096199" ignored="false" />
     <file path="/new.html.erb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1378624062926" ignored="false" />
@@ -62,19 +62,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="41" selection-start="76" selection-end="76" vertical-scroll-proportion="-2.8846154">
+            <state line="3" column="29" selection-start="65" selection-end="65" vertical-scroll-proportion="0.18145162">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile.lock" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile.lock" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="8" selection-start="2835" selection-end="2841" vertical-scroll-proportion="0.59770113">
+            <state line="127" column="29" selection-start="2851" selection-end="2851" vertical-scroll-proportion="-73.26923">
               <folding />
             </state>
           </provider>
@@ -659,16 +659,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="41" selection-start="76" selection-end="76" vertical-scroll-proportion="-2.8846154">
+        <state line="127" column="29" selection-start="2851" selection-end="2851" vertical-scroll-proportion="-73.26923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="8" selection-start="2835" selection-end="2841" vertical-scroll-proportion="0.59770113">
+        <state line="3" column="29" selection-start="65" selection-end="65" vertical-scroll-proportion="0.18145162">
           <folding />
         </state>
       </provider>
