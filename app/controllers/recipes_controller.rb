@@ -19,7 +19,6 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
-
   end
 
   def edit
@@ -32,12 +31,13 @@ class RecipesController < ApplicationController
   end
 
   def update
-
+    @recipe = Recipe.find(params[:id])
+    @author = User.find(@recipe.user_id)
+    redirect_to recipe_path
   end
 
   def destroy
-    Recipe.find(params[:id]).destroy
-    redirect_to recipes_path
+
   end
 
 end
