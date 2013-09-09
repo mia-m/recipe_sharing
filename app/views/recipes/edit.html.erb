@@ -11,16 +11,19 @@
 
 <br />
 <br />
-<%= link_to "RECIPES", recipes_path %>
+<%= form_for @recipe do |f| %>
+    <div>
+      <%= f.label :title %><br />
+      <%= f.text_field :title %><br />
+    </div>
+    <div>
+      <%= f.label :body %><br />
+      <%= f.text_area :body %><br />
+    </div>
+    <div>
+      <%= f.submit "Submit" %>
+    </div>
+<% end %>
+
 <br />
-
-<h4>
-  <% @userRecipes.each do |recipe| %>
-    <% if recipe.frozen? %>
-          next
-    <% end %>
-    <%= link_to recipe.title, recipe_path( id: recipe.id ) %><br />
-  <% end %>
-</h4>
-
-
+<%= link_to "Cancel", :back %>

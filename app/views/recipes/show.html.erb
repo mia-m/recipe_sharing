@@ -9,18 +9,17 @@
 &emsp;
 <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
 
-<br />
-<br />
-<%= link_to "RECIPES", recipes_path %>
-<br />
 
-<h4>
-  <% @userRecipes.each do |recipe| %>
-    <% if recipe.frozen? %>
-          next
-    <% end %>
-    <%= link_to recipe.title, recipe_path( id: recipe.id ) %><br />
-  <% end %>
-</h4>
+<h2> <%= @recipe.title %></h2>
+<h4> by <%= @author.name %> </h4>
 
+<p> <% lines = @recipe.body.split( "\n" ) %>
+     <% lines.each do |line| %>
+        <%= line %><br />
+     <% end %>
+</p>
+
+<%= link_to "Edit", edit_recipe_path %>
+&emsp;
+<%= link_to "Back to Recipes", recipes_path %>
 

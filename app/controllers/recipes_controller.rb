@@ -1,8 +1,20 @@
 class RecipesController < ApplicationController
 
   def index
-    @email = params[ :email ]
-    @name = params[:name ]
+    @name = current_user.name
+    @userId = current_user.id
+    if params[:user]
+      @userRecipes = Recipe.where(:user_id => @userId)
+    else
+      @userRecipes = Recipe.all
+    end
+  end
+
+  def create
+    @recipe = Recipe.new(params[:recipe])
+    @recipe.user_id = current_user.id
+    @recipe.save
+    redirect_to recipes_path
   end
 
   def new
@@ -10,7 +22,22 @@ class RecipesController < ApplicationController
 
   end
 
-  def create
+  def edit
+    @recipe = Recipe.find(params[:id])
+  end
+
+  def show
+    @recipe = Recipe.find(params[:id])
+    @author = User.find(@recipe.user_id)
+  end
+
+  def update
+
+  end
+
+  def destroy
+    Recipe.find(params[:id]).destroy
     redirect_to recipes_path
   end
+
 end
