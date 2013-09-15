@@ -12,6 +12,7 @@ gem 'warden', '1.2.3'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 2.0'
 end
 
 group :production do
@@ -20,6 +21,10 @@ end
 
 gem 'devise'
 
+
+group :test do
+  gem 'factory_girl_rails', :require => false
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
