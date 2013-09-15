@@ -33,6 +33,9 @@ class RecipesController < ApplicationController
   def update
     @recipe = Recipe.find(params[:id])
     @author = User.find(@recipe.user_id)
+    @recipe.title = params[:recipe][:title]
+    @recipe.body = params[:recipe][:body]
+    @recipe.save
     redirect_to recipe_path
   end
 
