@@ -58,4 +58,20 @@ describe RecipesController do
     end
   end
 
+  # UPDATE
+  describe "#update" do
+    it "should update the fields of the recipe" do
+      # create
+      post :create, :id => 1, "recipe" => {"title" => "Apple Pie", "body" => "Apple Pie body"}
+      post :create, :id => 2, "recipe" => {"title" => "Brownies", "body" => "Brownies body"}
+      post :create, :id => 3, "recipe" => {"title" => "Cheesecake", "body" => "Cheesecake body"}
+
+      # then update
+      put :update, :id => 3, "recipe" => {"title" => "Doughnut", "body" => "Doughnut body"}
+      assigns(:recipe).should_not be_nil
+      assigns(:recipe).title.should == "Doughnut"
+      assigns(:recipe).body.should == "Doughnut body"
+    end
+  end
+
 end
