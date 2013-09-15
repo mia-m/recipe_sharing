@@ -1,5 +1,7 @@
 class RecipesController < ApplicationController
 
+  respond_to :html, :xml, :json
+
   def index
     @name = current_user.name
     @userId = current_user.id
@@ -8,6 +10,7 @@ class RecipesController < ApplicationController
     else
       @userRecipes = Recipe.all
     end
+    respond_with(@userRecipes, :location => recipes_url)
   end
 
   def create
