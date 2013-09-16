@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="676c9e58-7472-4c96-9f51-ca869e308279" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-1b13569e9620782f423d4cd3ce931750.css.gz" afterPath="$PROJECT_DIR$/public/assets/application-1b13569e9620782f423d4cd3ce931750.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-4f7cbb1964070dc0f457cafcc4c3e124.js.gz" afterPath="$PROJECT_DIR$/public/assets/application-4f7cbb1964070dc0f457cafcc4c3e124.js.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="$PROJECT_DIR$/public/assets/application.css.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="$PROJECT_DIR$/public/assets/application.js.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="recipe_sharing.iws" />
@@ -35,8 +32,8 @@
     <file path="/create.js.erb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1379291435460" ignored="false" />
     <file path="/application.html.erb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1379290450403" ignored="false" />
     <file path="/_form.erb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1379297430754" ignored="false" />
-    <file path="/production.rb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1379299795340" ignored="false" />
-    <file path="$PROJECT_DIR$/db/schema.rb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1379299895677" ignored="false" />
+    <file path="/production.rb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1379301021068" ignored="false" />
+    <file path="$PROJECT_DIR$/db/schema.rb" changelist="676c9e58-7472-4c96-9f51-ca869e308279" time="1379300765853" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="4" selection-start="508" selection-end="508" vertical-scroll-proportion="-10.0">
+            <state line="10" column="4" selection-start="384" selection-end="384" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -131,7 +128,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="55" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.4140625">
+            <state line="18" column="30" selection-start="651" selection-end="679" vertical-scroll-proportion="0.296875">
               <folding />
             </state>
           </provider>
@@ -1004,26 +1001,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="508" selection-end="508" vertical-scroll-proportion="-10.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,9 +1029,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="384" selection-end="384" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="55" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.4140625">
+        <state line="18" column="30" selection-start="651" selection-end="679" vertical-scroll-proportion="0.296875">
           <folding />
         </state>
       </provider>
