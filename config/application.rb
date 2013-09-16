@@ -62,5 +62,8 @@ module RecipeSharing
     # When deploying to Heroku, force application to not access DB
     # or load models when precompiling your assets
     config.assets.initialize_on_precompile = false
+
+    # Javascript expansions
+    config.action_view.javascript_expansions[:defaults] = %w(jquery.min jquery_ujs)
   end
 end

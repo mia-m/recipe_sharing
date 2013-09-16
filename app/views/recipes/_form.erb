@@ -1,0 +1,12 @@
+<h1>Friends Share Recipes!</h1>
+
+<%= button_to('Logout', destroy_user_session_path, :method => :delete) %>
+<hr>
+<%= link_to "Add Recipe", new_recipe_path %>
+&emsp;
+<%= link_to "My Recipes", recipes_path(:user => 1) %>
+&emsp;
+<% greeting = "Hello, #{current_user.name}" %>
+<%= link_to greeting, edit_user_registration_path %>
+<hr>
+<br />

@@ -1,17 +1,6 @@
-<h1>Friends Share Recipes!</h1>
+<%= render :partial => 'form' %>
 
-<%= link_to "Add Recipe", new_recipe_path %>
-&emsp;
-<%= link_to "My Recipes", recipes_path(:user => 1) %>
-&emsp;
-<% greeting = "Hello, #{current_user.name}" %>
-<%= link_to greeting, edit_user_registration_path %>
-&emsp;
-<%= link_to "Logout", destroy_user_session_path, :method => :delete %>
-
-<br />
-<br />
-<%= link_to "RECIPES", recipes_path %>
+<%= link_to "RECIPES", recipes_path, :remote => true %>
 <br />
 
 <h4>
@@ -19,7 +8,7 @@
     <% if recipe.frozen? %>
           next
     <% end %>
-    <%= link_to recipe.title, recipe_path( id: recipe.id ) %><br />
+    <%= link_to recipe.title, recipe_path( id: recipe.id ), :remote => true %><br />
   <% end %>
 </h4>
 

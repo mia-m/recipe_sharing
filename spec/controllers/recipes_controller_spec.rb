@@ -52,7 +52,7 @@ describe RecipesController do
   # CREATE
   describe "#create" do
     it "should create a new recipe" do
-      post :create, "recipe" => {"title" => "Banana Bread", "body" => "Ingredients and Directions"}
+      xhr :post, :create, "recipe" => {"title" => "Banana Bread", "body" => "Ingredients and Directions"}
       assigns(:recipe).should_not be_nil
       assigns(:recipe).title.should == "Banana Bread"
     end
@@ -62,9 +62,9 @@ describe RecipesController do
   describe "#update" do
     it "should update the fields of the recipe" do
       # create
-      post :create, :id => 1, "recipe" => {"title" => "Apple Pie", "body" => "Apple Pie body"}
-      post :create, :id => 2, "recipe" => {"title" => "Brownies", "body" => "Brownies body"}
-      post :create, :id => 3, "recipe" => {"title" => "Cheesecake", "body" => "Cheesecake body"}
+      xhr :post, :create, :id => 1, "recipe" => {"title" => "Apple Pie", "body" => "Apple Pie body"}
+      xhr :post, :create, :id => 2, "recipe" => {"title" => "Brownies", "body" => "Brownies body"}
+      xhr :post, :create, :id => 3, "recipe" => {"title" => "Cheesecake", "body" => "Cheesecake body"}
 
       # then update
       put :update, :id => 3, "recipe" => {"title" => "Doughnut", "body" => "Doughnut body"}

@@ -1,7 +1,8 @@
 class Recipe < ActiveRecord::Base
-  attr_accessible :body, :title, :user_id
+  attr_accessible :title, :body, :user_id
 
   belongs_to :user
 
+  validates_presence_of :title, :body
 
 end

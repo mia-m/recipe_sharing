@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
 
-  respond_to :html, :xml, :json
+  respond_to :html, :xml, :json, :js
 
   def index
     @name = current_user.name
@@ -16,8 +16,11 @@ class RecipesController < ApplicationController
   def create
     @recipe = Recipe.new(params[:recipe])
     @recipe.user_id = current_user.id
-    @recipe.save
-    redirect_to recipes_path
+    if @recipe.save
+      flash[:notice] = "Successfully created recipe"
+      respond_with(@recipes, :location => recipes_url)
+      #redirect_to recipes_path # commented out, use ajax instead
+    end
   end
 
   def new
@@ -36,13 +39,14 @@ class RecipesController < ApplicationController
   def update
     @recipe = Recipe.find(params[:id])
     @author = User.find(@recipe.user_id)
-    @recipe.title = params[:recipe][:title]
-    @recipe.body = params[:recipe][:body]
-    @recipe.save
-    redirect_to recipe_path
+    if @recipe.update_attributes(params[:recipe])
+      flash[:notice] = "Successfully updated recipe"
+      redirect_to recipe_path
+    end
   end
 
   def destroy
+
 
   end
 

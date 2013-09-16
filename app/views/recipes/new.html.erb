@@ -1,17 +1,7 @@
-<h1>Friends Share Recipes!</h1>
+<%= render :partial => 'form' %>
 
-<%= link_to "Add Recipe", new_recipe_path %>
-&emsp;
-<%= link_to "My Recipes", recipes_path(:user => 1) %>
-&emsp;
-<% greeting = "Hello, #{current_user.name}" %>
-<%= link_to greeting, edit_user_registration_path %>
-&emsp;
-<%= link_to "Logout", destroy_user_session_path, :method => :delete %>
-
-<br />
-<br />
-<%= form_for @recipe do |f| %>
+<%= form_for(@recipe, :remote => true) do |f| %>
+  <div id= "recipe_errors" style="display:none"></div>
   <div>
     <%= f.label :title %><br />
     <%= f.text_field :title %><br />
@@ -26,4 +16,4 @@
 <% end %>
 
 <br />
-<%= link_to "Cancel", :back %>
+<%= link_to "Cancel", :back, :remote => true %>

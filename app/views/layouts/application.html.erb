@@ -3,14 +3,25 @@
 <head>
   <title>RecipeSharing</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <!--<%= javascript_include_tag "application" %>-->
+  <!--<%= csrf_meta_tags %>-->
+  <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js' %>
+  <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js' %>
+  <%= javascript_include_tag 'jquery-rails.js' %>
+  <!--<%= javascript_include_tag 'rails' %>-->
 </head>
-<body>
+<!-- Commented out this body to use div to show flash_notice -->
+<!--<body>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
 <%= yield %>
 
+</body>-->
+<body>
+    <div id="container">
+      <div id="flash_notice" style="display:none"></div>
+      <%= yield %>
+    </div>
 </body>
 </html>
