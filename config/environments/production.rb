@@ -64,4 +64,7 @@ RecipeSharing::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  # Precompile assets
+  config.assets.precompile += %w( jquery.dataTables.min.js jquery-ui-1.8.21.custom.min.js jquery-ui-1.8.21.custom.css bootstrap-datepicker.js fullcalendar.js)
 end
